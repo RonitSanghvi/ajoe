@@ -31,3 +31,13 @@ body {
     text-wrap: balance;
   }
 }
+
+.bg-customStripes {
+  background-image: repeating-linear-gradient(
+    to bottom,
+    #8B0102,
+    #8B0102 2px,
+    #750204 2px,
+    #750204 4px
+  );
+}

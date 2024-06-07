@@ -1,113 +1,168 @@
-import Image from "next/image";
+import { Sidebar } from "./data";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:size-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <div className="flex flex-col">
+        
+      <div className="flex bg-white flex-row">
+        <div className="p-1">
+          <img src="logo.jpg" width="122" height="104" />
+        </div>
+        <div className="flex flex-1 flex-col text-left px-28 justify-center whitespace-nowrap" id="logo">
+          <span className="text-2xl text-black tracking-widest font-bold">AJOE.ORG</span>
+          <text className="text-black tracking-widest"><text className="text-red-600 font-bold">A</text>ssociation des <text className="text-blue-600 font-bold">J</text>uifs <text className="text-blue-600 font-bold">O</text>riginaires d'<text className="text-red-600 font-bold">E</text>gypte	</text>
+        </div>
+        <div className="p-0 pr-2 h-104 flex">
+          <img src="carte_web.jpeg" width="122" height="104" className="object-cover" />
         </div>
       </div>
 
-      <div className="relative z-[-1] flex place-items-center before:absolute before:h-[300px] before:w-full before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 sm:before:w-[480px] sm:after:w-[240px] before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
+      <div className="border-b-2 border-customOrange"></div>
+      <div className="border-b-2 border-customRed"></div>
+      <div className="border-b-2 border-customOrange"></div>
+      <div className="border-b-8 border-customRed"></div>
+      <div className="border-b-8 border-customRed"></div>
+      <div className="border-b-8 border-customRed"></div>
+      <div className="border-b-2 border-customOrange"></div>
+      <div className="border-b-2 border-customRed"></div>
+      <div className="border-b-2 border-customOrange"></div>
+
+      <div className="flex flex-row bg-customStripes">
+        <div className="flex flex-col tracking-widest space-y-3">
+          <a href="" className="text-customRed font-bold pl-4 pr-8 pt-6 hover:scale-105">
+            qui sommes nous ?
+          </a>
+          
+          {Sidebar.map((data, index)=> (
+            <>
+              <div className="border-b-2 border-customOrange"></div>
+              <a href="" className=" text-customOrange pl-4 hover:text-customYellow hover:font-semibold" key={index}>{data}</a>
+            </>
+          ))}
+        </div>
+
+        <div className="flex-1 px-16 py-12 flex flex-col space-y-4 text-justify">
+          <p className="text-left text-lg font-semibold pb-12">Actualité octobre 2021</p>
+          <p className="text-left text-xl pb-4">Des nouvelles de l'AJOE... enfin!</p>
+          <p className="text-customYellow tracking-wider">
+            Chers amis de l’AJOE,
+          </p>
+          <p className="text-customYellow tracking-wider">
+            Ces deux dernières années ont été comme pour tout le monde une période
+            très difficile pour notre association et a vu disparaître beaucoup de
+            nos très chers amis.
+          </p>
+          <p className="text-customYellow tracking-wider">
+            C'est ainsi que David HARARI s'en est allé en plein confinement le 7
+            avril 2020.
+          </p>
+          <p className="text-customYellow tracking-wider">
+            L'AJOE perd encore une fois un membre très actif, bien plus qu'un
+            trésorier, un très grand ami et nous lui rendons hommage. Il nous manque
+            terriblement.
+          </p>
+          <p className="text-customYellow tracking-wider">
+            Mais, pour toute une nouvelle génération qui arrive, notre histoire se
+            doit d'être transmise. C'est pourquoi nous avons décidé de programmer et
+            de produire pour une soirée exceptionnelle, le 15 décembre prochain
+            spectacle d'Isabelle de Botton
+          </p>
+          <p className="text-customYellow tracking-wider">
+            "La Parisienne d'Alexandrie" qui retrace avec tant de justesse, tendresse
+            et humour l'épopée des Juifs d'Egypte.
+          </p>
+          <a href="">
+            <img src="alex.jpeg" width="180" height="270" className="border-0" />
+          </a>
+          <p className="text-customYellow tracking-wider">
+            Nous nous retrouverons donc tous ce soir là au Théatre "Ranelagh", 5 rue
+            des Vignes Paris 16°.
+          </p>
+          <p className="text-customYellow tracking-wider">
+            Vous pouvez d'ores et déjà réserver vos places sur le site{' '}
+            <a href="" title="Billetreduc" className="text-customRed underline hover:text-customOrange">
+              Billetreduc.com
+            </a>
+            {' '}ou auprès du 06 59 00 05 05
+          </p>
+          <p className="text-customYellow tracking-wider pt-8">
+            Micheline Abergel - Gaby Fossier Zein <br />
+            Le 25 octobre 2021
+          </p>
+          <p className="text-right pt-20">mise à jour 25/10/21</p>
+        </div>
+
+        <div className="flex flex-col bg-yellow-100 text-black p-2 items-center space-y-4 text-center w-60 px-4">
+          <text className="text-lg font-bold py-2 text-customRed">A LIRE</text>
+          <div>
+            <img
+              src="trigano_book.jpg"
+              alt="product image 2"
+              width="176"
+              height="260"
+              className="border mx-auto"
+            />
+            <span className="block">La fin du judaïsme en terre d'Islam</span>
+            <a href="actualite.html" className="text-customRed underline hover:text-customOrange">
+              lire la suite &gt;
+            </a>
+          </div>
+
+          <div>
+            <img
+              src="orosdi-backsaga.jpg"
+              alt="product image 1"
+              width="172"
+              height="246"
+              className="border-0 mt-8 mx-auto"
+            />
+            <span className="block">Les Grands Magasins du Caire</span>
+            <a href="livre1_0908.html" className="text-customRed underline hover:text-customOrange">
+              lire la suite &gt;
+            </a>
+          </div>
+
+          <div>
+            <img
+              src="tuchoisiraslerire.jpg"
+              alt="product image 2"
+              width="178"
+              height="240"
+              className="border mt-8 mx-auto"
+            />
+            <span className="block">Tu choisiras le rire</span>
+            <a href="" className="text-customRed underline hover:text-customOrange">
+              lire la suite &gt;
+            </a>
+          </div>
+
+          <div>
+          <span className="block">Conférence de Bat Yam</span>
+          <a href="" className="text-customRed underline hover:text-customOrange">
+            lire la suite &gt;
+          </a>
+          </div>
+
+          <div>
+          <span className="block"> Les fleurs de l'orient et l'occident </span>
+          <a href="" className="text-customRed underline hover:text-customOrange">
+            lire la suite &gt;
+          </a>
+          </div>
+
+          <div>
+          <span className="block"> Le livre mémoire de Roland Bertin </span>
+          <span className="block">"Once apon a time"</span>
+          <a href="" className="text-customRed underline hover:text-customOrange"> KAN YA MAKAN </a>
+          </div>
+
+          <div>
+          <span className="block">Conférence Alexandre De Aranjo</span>
+          <a href="" className="text-customRed underline hover:text-customOrange"> le texte intégral </a>
+          </div>
+
+        </div>
       </div>
-
-      <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-balance text-sm opacity-50">
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+    </div>
   );
 }
