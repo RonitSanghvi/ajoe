@@ -1,4 +1,5 @@
-import { Sidebar } from "./data";
+import Image from "next/image";
+import { Sidebar, description } from "./data";
 
 export default function Home() {
   return (
@@ -6,14 +7,14 @@ export default function Home() {
         
       <div className="flex bg-white flex-row">
         <div className="p-1">
-          <img src="logo.jpg" width="122" height="104" />
+          <Image alt="logo" src="/logo.jpg" width="122" height="104" />
         </div>
         <div className="flex flex-1 flex-col text-left px-28 justify-center whitespace-nowrap" id="logo">
           <span className="text-2xl text-black tracking-widest font-bold">AJOE.ORG</span>
           <text className="text-black tracking-widest"><text className="text-red-600 font-bold">A</text>ssociation des <text className="text-blue-600 font-bold">J</text>uifs <text className="text-blue-600 font-bold">O</text>riginaires d'<text className="text-red-600 font-bold">E</text>gypte	</text>
         </div>
         <div className="p-0 pr-2 h-104 flex">
-          <img src="carte_web.jpeg" width="122" height="104" className="object-cover" />
+          <Image alt="carte_web" src="/carte_web.jpeg" width="122" height="104" className="object-cover" />
         </div>
       </div>
 
@@ -43,43 +44,21 @@ export default function Home() {
 
         <div className="flex-1 px-16 py-12 flex flex-col space-y-4 text-justify">
           <p className="text-left text-lg font-semibold pb-12">Actualité octobre 2021</p>
-          <p className="text-left text-xl pb-4">Des nouvelles de l'AJOE... enfin!</p>
-          <p className="text-customYellow tracking-wider">
-            Chers amis de l’AJOE,
-          </p>
-          <p className="text-customYellow tracking-wider">
-            Ces deux dernières années ont été comme pour tout le monde une période
-            très difficile pour notre association et a vu disparaître beaucoup de
-            nos très chers amis.
-          </p>
-          <p className="text-customYellow tracking-wider">
-            C'est ainsi que David HARARI s'en est allé en plein confinement le 7
-            avril 2020.
-          </p>
-          <p className="text-customYellow tracking-wider">
-            L'AJOE perd encore une fois un membre très actif, bien plus qu'un
-            trésorier, un très grand ami et nous lui rendons hommage. Il nous manque
-            terriblement.
-          </p>
-          <p className="text-customYellow tracking-wider">
-            Mais, pour toute une nouvelle génération qui arrive, notre histoire se
-            doit d'être transmise. C'est pourquoi nous avons décidé de programmer et
-            de produire pour une soirée exceptionnelle, le 15 décembre prochain
-            spectacle d'Isabelle de Botton
-          </p>
-          <p className="text-customYellow tracking-wider">
-            "La Parisienne d'Alexandrie" qui retrace avec tant de justesse, tendresse
-            et humour l'épopée des Juifs d'Egypte.
-          </p>
+          <p className="text-left text-xl pb-4">Des nouvelles de l&apos;AJOE... enfin!</p>
+          { description.map((data, index)=>(
+            <p key={index} className="text-customYellow tracking-wider">
+              {data}
+            </p>
+          )) }
           <a href="">
-            <img src="alex.jpeg" width="180" height="270" className="border-0" />
+            <Image alt="alex Image" src="/alex.jpeg" width="180" height="270" className="border-0" />
           </a>
           <p className="text-customYellow tracking-wider">
-            Nous nous retrouverons donc tous ce soir là au Théatre "Ranelagh", 5 rue
-            des Vignes Paris 16°.
+            Nous nous retrouverons donc tous ce soir là au Théatre &quot;Ranelagh&quot;, 5 rue
+            des Vignes Paris 16&deg;.
           </p>
           <p className="text-customYellow tracking-wider">
-            Vous pouvez d'ores et déjà réserver vos places sur le site{' '}
+            Vous pouvez d&apos;ores et déjà réserver vos places sur le site{' '}
             <a href="" title="Billetreduc" className="text-customRed underline hover:text-customOrange">
               Billetreduc.com
             </a>
@@ -95,22 +74,22 @@ export default function Home() {
         <div className="flex flex-col bg-yellow-100 text-black p-2 items-center space-y-4 text-center w-60 px-4">
           <text className="text-lg font-bold py-2 text-customRed">A LIRE</text>
           <div>
-            <img
-              src="trigano_book.jpg"
+            <Image
+              src="/trigano_book.jpg"
               alt="product image 2"
               width="176"
               height="260"
               className="border mx-auto"
             />
-            <span className="block">La fin du judaïsme en terre d'Islam</span>
+            <span className="block">La fin du judaïsme en terre d&apos;Islam</span>
             <a href="actualite.html" className="text-customRed underline hover:text-customOrange">
               lire la suite &gt;
             </a>
           </div>
 
           <div>
-            <img
-              src="orosdi-backsaga.jpg"
+            <Image
+              src="/orosdi-backsaga.jpg"
               alt="product image 1"
               width="172"
               height="246"
@@ -123,8 +102,8 @@ export default function Home() {
           </div>
 
           <div>
-            <img
-              src="tuchoisiraslerire.jpg"
+            <Image
+              src="/tuchoisiraslerire.jpg"
               alt="product image 2"
               width="178"
               height="240"
@@ -144,7 +123,7 @@ export default function Home() {
           </div>
 
           <div>
-          <span className="block"> Les fleurs de l'orient et l'occident </span>
+          <span className="block"> Les fleurs de l&apos;orient et l&apos;occident </span>
           <a href="" className="text-customRed underline hover:text-customOrange">
             lire la suite &gt;
           </a>
@@ -152,7 +131,7 @@ export default function Home() {
 
           <div>
           <span className="block"> Le livre mémoire de Roland Bertin </span>
-          <span className="block">"Once apon a time"</span>
+          <span className="block">&quot;Once apon a time&quot;</span>
           <a href="" className="text-customRed underline hover:text-customOrange"> KAN YA MAKAN </a>
           </div>
 
