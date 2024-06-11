@@ -41,9 +41,9 @@ export default function Home() {
           </p>
           <p className="text-customYellow tracking-wider">
             Vous pouvez d&apos;ores et déjà réserver vos places sur le site{' '}
-            <a href="" title="Billetreduc" className="text-customRed underline hover:text-customOrange">
+            <Link href="https://web.archive.org/web/20220315010112/https://www.billetreduc.com/" title="Billetreduc" className="text-customRed underline hover:text-customOrange">
               Billetreduc.com
-            </a>
+            </Link>
             {' '}ou auprès du 06 59 00 05 05
           </p>
           <p className="text-customYellow tracking-wider pt-8">
@@ -64,7 +64,7 @@ export default function Home() {
               className="border mx-auto"
             />
             <span className="block">La fin du judaïsme en terre d&apos;Islam</span>
-            <Link href="actualite.html" className="text-customRed underline hover:text-customOrange">
+            <Link href="/actualite" className="text-customRed underline hover:text-customOrange">
               lire la suite &gt;
             </Link>
           </div>
