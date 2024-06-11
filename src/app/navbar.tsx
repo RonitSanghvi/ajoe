@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Navbar(image: any) {
     return (
@@ -18,9 +19,9 @@ export default function Navbar(image: any) {
             <div className="border-b-2 border-customOrange"></div>
             <div className="border-b-2 border-customRed"></div>
             <div className="border-b-2 border-customOrange"></div>
-            <div className="border-b-8 border-customRed"></div>
-            <div className="border-b-8 border-customRed"></div>
-            <div className="border-b-8 border-customRed"></div>
+            <Link href='/' className="tracking-widest text-sm bg-customRed text-customYellow hover:text-white hover:font-semibold py-1 pl-4">
+                || ACCUEIL ||
+            </Link>
             <div className="border-b-2 border-customOrange"></div>
             <div className="border-b-2 border-customRed"></div>
             <div className="border-b-2 border-customOrange"></div>

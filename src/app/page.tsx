@@ -32,9 +32,9 @@ export default function Home() {
               {data}
             </p>
           )) }
-          <a href="">
-            <Image alt="alex Image" src="/alex.jpeg" width="180" height="270" className="border-0" />
-          </a>
+          
+          <Image alt="alex Image" src="/alex.jpeg" width="180" height="270" className="border-0" />
+          
           <p className="text-customYellow tracking-wider">
             Nous nous retrouverons donc tous ce soir là au Théatre &quot;Ranelagh&quot;, 5 rue
             des Vignes Paris 16&deg;.
@@ -64,9 +64,9 @@ export default function Home() {
               className="border mx-auto"
             />
             <span className="block">La fin du judaïsme en terre d&apos;Islam</span>
-            <a href="actualite.html" className="text-customRed underline hover:text-customOrange">
+            <Link href="actualite.html" className="text-customRed underline hover:text-customOrange">
               lire la suite &gt;
-            </a>
+            </Link>
           </div>
 
           <div>
@@ -78,9 +78,9 @@ export default function Home() {
               className="border-0 mt-8 mx-auto"
             />
             <span className="block">Les Grands Magasins du Caire</span>
-            <a href="livre1_0908.html" className="text-customRed underline hover:text-customOrange">
+            <Link href="/history" className="text-customRed underline hover:text-customOrange">
               lire la suite &gt;
-            </a>
+            </Link>
           </div>
 
           <div>
@@ -92,34 +92,34 @@ export default function Home() {
               className="border mt-8 mx-auto"
             />
             <span className="block">Tu choisiras le rire</span>
-            <a href="" className="text-customRed underline hover:text-customOrange">
+            <Link href="" className="text-customRed underline hover:text-customOrange">
               lire la suite &gt;
-            </a>
+            </Link>
           </div>
 
           <div>
           <span className="block">Conférence de Bat Yam</span>
-          <a href="" className="text-customRed underline hover:text-customOrange">
+          <Link href="/PDFs/conference_batyam.pdf" className="text-customRed underline hover:text-customOrange">
             lire la suite &gt;
-          </a>
+          </Link>
           </div>
 
           <div>
           <span className="block"> Les fleurs de l&apos;orient et l&apos;occident </span>
-          <a href="" className="text-customRed underline hover:text-customOrange">
+          <Link href="/PDFs/farhi_fleurs.pdf" className="text-customRed underline hover:text-customOrange">
             lire la suite &gt;
-          </a>
+          </Link>
           </div>
 
           <div>
           <span className="block"> Le livre mémoire de Roland Bertin </span>
           <span className="block">&quot;Once apon a time&quot;</span>
-          <a href="" className="text-customRed underline hover:text-customOrange"> KAN YA MAKAN </a>
+          <Link href="/PDFs/kanyamakan42.pdf" className="text-customRed underline hover:text-customOrange"> KAN YA MAKAN </Link>
           </div>
 
           <div>
           <span className="block">Conférence Alexandre De Aranjo</span>
-          <a href="" className="text-customRed underline hover:text-customOrange"> le texte intégral </a>
+          <Link href="/PDFs/aranjo_de.pdf" className="text-customRed underline hover:text-customOrange"> le texte intégral </Link>
           </div>
 
         </div>
