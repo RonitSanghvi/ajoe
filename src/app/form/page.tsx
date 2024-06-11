@@ -63,7 +63,7 @@ export default function page() {
                         <u>ANNUAL CONTRIBUTION</u> 2016 : 30 Euros or 35 US Dollars.<br/>
                         Cheque to be paid to order from AJOE.<br/>
                         <u>Addressing the bulletin membership and your check to :</u><br/>
-                        David Harari's<br/>
+                        David Harari&apos;s<br/>
                         AJOE Secretary<br/>
                         2, presentation street<br/>
                         75011 Paris<br/><br/>

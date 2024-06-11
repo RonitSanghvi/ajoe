@@ -19,7 +19,7 @@ export default function page() {
                     />
                     <p className="text-customRed font-bold">	
                         © Prof. Uri M. Kupferschmidt - Université de Haifa<br/>
-                        Publie au Bulletin "Bnei Ha-yeor" 2007, Israel.
+                        Publie au Bulletin &quot;Bnei Ha-yeor&quot; 2007, Israel.
                     </p>
                 </div>
                 {history.map((data, index)=>(
