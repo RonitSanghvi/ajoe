@@ -41,3 +41,8 @@ body {
     #750204 4px
   );
 }
+
+/* For Unorder list dots */
+.empty-dots ul {
+  list-style-type: disc;
+}

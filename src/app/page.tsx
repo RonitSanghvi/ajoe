@@ -1,45 +1,27 @@
 import Image from "next/image";
+import Link from 'next/link';
 import { Sidebar, description } from "./data";
+import Navbar from "./navbar";
 
 export default function Home() {
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col w-screen">
         
-      <div className="flex bg-white flex-row">
-        <div className="p-1">
-          <Image alt="logo" src="/logo.jpg" width="122" height="104" />
-        </div>
-        <div className="flex flex-1 flex-col text-left px-28 justify-center whitespace-nowrap" id="logo">
-          <span className="text-2xl text-black tracking-widest font-bold">AJOE.ORG</span>
-          <text className="text-black tracking-widest"><text className="text-red-600 font-bold">A</text>ssociation des <text className="text-blue-600 font-bold">J</text>uifs <text className="text-blue-600 font-bold">O</text>riginaires d&apos;<text className="text-red-600 font-bold">E</text>gypte	</text>
-        </div>
-        <div className="p-0 pr-2 h-104 flex">
-          <Image alt="carte_web" src="/carte_web.jpeg" width="122" height="104" className="object-cover" />
-        </div>
-      </div>
-
-      <div className="border-b-2 border-customOrange"></div>
-      <div className="border-b-2 border-customRed"></div>
-      <div className="border-b-2 border-customOrange"></div>
-      <div className="border-b-8 border-customRed"></div>
-      <div className="border-b-8 border-customRed"></div>
-      <div className="border-b-8 border-customRed"></div>
-      <div className="border-b-2 border-customOrange"></div>
-      <div className="border-b-2 border-customRed"></div>
-      <div className="border-b-2 border-customOrange"></div>
+      <Navbar image = "/carte_web.jpeg" />
 
       <div className="flex flex-row bg-customStripes">
         <div className="flex flex-col tracking-widest space-y-3">
-          <a href="" className="text-customRed font-bold pl-4 pr-8 pt-6 hover:scale-105">
+          <Link href="/qui_sommes_nous" className="text-customRed font-bold pl-4 pr-8 pt-6 hover:scale-105">
             qui sommes nous ?
-          </a>
+          </Link>
           
           {Sidebar.map((data, index)=> (
-            <>
-              <div className="border-b-2 border-customOrange"></div>
-              <a href="" className=" text-customOrange pl-4 hover:text-customYellow hover:font-semibold" key={index}>{data}</a>
-            </>
+            <div key={index} className="">
+              <div className="border-b-2 mb-2 border-customOrange"></div>
+              <Link href={data.url} className=" text-customOrange pl-4 hover:text-customYellow hover:font-semibold">{data.title}</Link>
+            </div>
           ))}
+
         </div>
 
         <div className="flex-1 px-16 py-12 flex flex-col space-y-4 text-justify">

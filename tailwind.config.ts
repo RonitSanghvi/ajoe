@@ -12,7 +12,8 @@ const config: Config = {
         customRed: '#FF0000',
         customOrange: '#FF9900',
         customYellow: '#F4FB00',
-        customDarkRed:'#790204'
+        customDarkRed:'#790204',
+        customRedMedium: '#990000'
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
