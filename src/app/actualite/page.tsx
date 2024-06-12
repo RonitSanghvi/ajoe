@@ -10,10 +10,10 @@ export default function page() {
         <p className="text-2xl pb-4 tracking-widest">ACTUALITE</p>
         <p className="text-2xl pb-4 text-customYellow tracking-widest">
             MÉMOIRE ET HISTOIRE:<br/>
-            "L'ONCLE ISAAC" ET/OU DR ISACCO GIUSEPPE LEVI   
+            &apos;L&quot;ONCLE ISAAC&apos; ET/OU DR ISACCO GIUSEPPE LEVI   
         </p>
         <p className="text-customYellow">
-            Conférence donnée à l'occasion de l'inauguration de la Chaire Joseph Barda pour l'étude de l'histoire de la communauté juive égyptienne, Université de Haïfa, le 14 octobre 2013 par le Professeur Kupferschmidt :
+            Conférence donnée à l&apos;occasion de l&apos;inauguration de la Chaire Joseph Barda pour l&apos;étude de l&apos;histoire de la communauté juive égyptienne, Université de Haïfa, le 14 octobre 2013 par le Professeur Kupferschmidt :
         </p>
         <ul>
             <li>Pour lire le document, cliquer ICI</li>
@@ -40,7 +40,6 @@ export default function page() {
                     <p key={index2} className="text-customYellow text-justify pr-10">{i}</p>
                 ))}
             </div>
-            
         ))}
 
       </div>

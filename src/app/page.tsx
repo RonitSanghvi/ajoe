@@ -92,7 +92,7 @@ export default function Home() {
               className="border mt-8 mx-auto"
             />
             <span className="block">Tu choisiras le rire</span>
-            <Link href="" className="text-customRed underline hover:text-customOrange">
+            <Link href="/rahmani" className="text-customRed underline hover:text-customOrange">
               lire la suite &gt;
             </Link>
           </div>
