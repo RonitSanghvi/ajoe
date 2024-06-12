@@ -1,5 +1,6 @@
 import Navbar from "../navbar"
 import { rahmani } from "../data"
+import Image from "next/image"
 
 export default function page() {
   return (
@@ -7,7 +8,8 @@ export default function page() {
       <Navbar/>
       <div className="flex flex-col bg-customRedMedium px-4 space-y-4 py-6 empty-dots">
         <p className="text-2xl pb-4 tracking-widest">LECTURE: MOISE RAHMANI</p>
-        <p className="font-semibold">TU CHOISIRAS LE RIRE. (ed. Pascal)</p>
+        <Image src="/tuchoisiraslerire.jpg" alt="Image of Book" width={150} height="100"/>
+        <p className="font-semibold text-white">TU CHOISIRAS LE RIRE. (ed. Pascal)</p>
         {rahmani.map((data, index)=> (
             <p key={index} className=" text-justify pr-10">
                 {data}
