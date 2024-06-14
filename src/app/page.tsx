@@ -39,13 +39,7 @@ export default function Home() {
             Nous nous retrouverons donc tous ce soir là au Théatre &quot;Ranelagh&quot;, 5 rue
             des Vignes Paris 16&deg;.
           </p>
-          <p className="text-customYellow tracking-wider">
-            Vous pouvez d&apos;ores et déjà réserver vos places sur le site{' '}
-            <Link href="https://web.archive.org/web/20220315010112/https://www.billetreduc.com/" title="Billetreduc" className="text-customRed underline hover:text-customOrange">
-              Billetreduc.com
-            </Link>
-            {' '}ou auprès du 06 59 00 05 05
-          </p>
+          
           <p className="text-customYellow tracking-wider pt-8">
             Micheline Abergel - Gaby Fossier Zein <br />
             Le 25 octobre 2021
