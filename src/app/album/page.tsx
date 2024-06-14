@@ -5,7 +5,7 @@ import { album } from "../data"
 export default function page() {
     return (
     <div className="w-screen">
-        <Navbar/>
+        <Navbar image="/navbarImages/album.jpg"/>
         <div className="flex flex-col min-h-screen bg-customRedMedium px-4 space-y-4 pt-6">
             <p className="text-2xl pb-4 tracking-widest">VOYAGE EN EGYPTE</p>
             <p className="text-customYellow">

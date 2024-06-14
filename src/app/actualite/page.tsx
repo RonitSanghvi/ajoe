@@ -5,7 +5,7 @@ import { actualite, actualite2, actualiteImage } from "../data"
 export default function page() {
   return (
     <div className="w-screen">
-      <Navbar/>
+      <Navbar image="/navbarImages/actualite.jpg"/>
       <div className="flex flex-col bg-customRedMedium px-4 space-y-4 py-6">
         <p className="text-2xl pb-4 tracking-widest">ACTUALITE</p>
         <p className="text-2xl pb-4 text-customYellow tracking-widest">

@@ -3,7 +3,7 @@ import { cuisine } from "../data"
 export default function page() {
   return (
     <div className="w-screen">
-        <Navbar/>
+        <Navbar image="/navbarImages/cuisine.jpg"/>
         <div className="flex flex-col min-h-screen bg-customRedMedium px-4 space-y-4 pt-6 empty-dots">
             <p className="text-2xl pb-4 tracking-widest">Recette</p>
             <p className="font-semibold">MAYNA OU MINA : lasagnes de pain azyme<br/> POUR 6 à 8 PERSONNES</p>

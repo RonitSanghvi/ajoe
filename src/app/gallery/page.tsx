@@ -5,7 +5,7 @@ import { gallery } from "../data"
 export default function page() {
     return (
         <div>
-            <Navbar />
+            <Navbar image="/navbarImages/gallery.jpg"/>
             <div className="w-screen bg-white">
                 <div className="flex flex-wrap py-10 mx-auto w-4/5">
                     {gallery.map((data, index)=>(

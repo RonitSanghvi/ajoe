@@ -4,7 +4,7 @@ import styles from './MembershipForm.module.css'
 export default function page() {
     return (
         <div className="w-screen">
-            <Navbar />
+            <Navbar image="/navbarImages/home.jpeg" />
             <div className="flex flex-col min-h-screen bg-customRedMedium px-4 space-y-4 py-6">
                 <div className="max-w-lg mx-auto border border-white p-6 rounded-md">
                 <h2 className="text-center text-xl font-bold mb-6">MEMBERSHIP BULLETIN</h2>

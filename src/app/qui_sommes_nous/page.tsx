@@ -4,7 +4,7 @@ import Navbar from "../navbar";
 export default function page() {
     return (
         <>
-            <Navbar image= "/carte3_web.jpg" />
+            <Navbar image= "/navbarImages/qui_sommes_nous.jpg" />
             <div className="flex flex-col h-screen w-screen bg-customRedMedium px-4 space-y-6">
                 <p className="text-left text-xl pb-4 tracking-widest pt-6">QUI SOMMES NOUS ?</p>
                 <p className="text-customYellow tracking-wider">

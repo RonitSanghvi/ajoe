@@ -5,7 +5,7 @@ import Image from "next/image"
 export default function page() {
   return (
     <div className="w-screen text-customYellow">
-      <Navbar/>
+      <Navbar image="/navbarImages/research.jpg"/>
       <div className="flex flex-col bg-customRedMedium px-4 space-y-4 py-6 empty-dots">
         <p className="text-2xl pb-4 tracking-widest">LECTURE: MOISE RAHMANI</p>
         <Image src="/tuchoisiraslerire.jpg" alt="Image of Book" width={150} height="100"/>

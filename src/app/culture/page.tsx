@@ -3,7 +3,7 @@ import Navbar from "../navbar"
 export default function page() {
   return (
     <div className="w-screen">
-      <Navbar/>
+      <Navbar image="/navbarImages/culture.jpeg"/>
       <div className="flex flex-col h-screen bg-customRedMedium px-4 space-y-4 py-6">
         <p className="text-2xl pb-4 tracking-widest">Culture</p>
         <p className="text-customYellow">Un livre à télécharger :</p>

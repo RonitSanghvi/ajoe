@@ -19,7 +19,7 @@ export default function Home() {
   return (
     <div className="flex flex-col w-screen">
         
-      <Navbar image = "/carte_web.jpeg" />
+      <Navbar image = "/navbarImages/home.jpeg" />
 
       <div className="flex flex-row bg-customStripes">
         <div className="flex flex-col tracking-widest space-y-3">

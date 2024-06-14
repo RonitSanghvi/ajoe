@@ -2,7 +2,7 @@ import Navbar from "../navbar"
 export default function page() {
   return (
     <>
-        <Navbar/>
+        <Navbar image="/navbarImages/testimonies.jpg"/>
         <div className="flex flex-col w-screen bg-customRedMedium text-sm px-6 space-y-4 py-6">
             <p className="text-2xl pb-4 tracking-widest">VOS TEMOIGNAGES, VOS ANNONCES</p>
             <p className="text-customYellow">Vous voulez partager un souvenir, une émotion, évoquer l&apos;Egypte d&apos;antan,<br/>Vous voulez réagir à un message, <br/>Alors,à votre plume ou votre clavier cette page attend vos témoignages, vos récits, vos réactions.</p>

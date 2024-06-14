@@ -2,7 +2,7 @@ import Navbar from "../navbar"
 export default function page() {
   return (
     <div className="w-screen">
-        <Navbar/>
+        <Navbar image="/navbarImages/research.jpg"/>
         <div className="flex flex-col min-h-screen bg-customRedMedium text-sm px-6 space-y-4 py-6">
             <p className="text-2xl pb-4 tracking-widest">RECHERCHE</p>
             <p className="text-customYellow">Vous recherchez des amis, des parents, cette rubrique vous est ouverte. Adressez nous un message précis et court. Les recherches figurant sur notre ancien site sont conservées dans nos archives. Vous désirez faire figurer à nouveau votre annonce, merci de l&apos;actualiser.</p>

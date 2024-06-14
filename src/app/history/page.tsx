@@ -5,7 +5,7 @@ import { history, history2, history3 } from "../data"
 export default function page() {
     return (
         <>
-            <Navbar />
+            <Navbar image="/navbarImages/history.jpg"/>
             <div className="flex flex-col w-screen bg-customRedMedium px-4 space-y-4">
                 <p className="text-3xl text-center pb-4 tracking-widest pt-6">LES GRANDS MAGASINS DU CAIRE</p>
                 <p className="text-lg font-semibold text-center pb-4 tracking-widest">EST-CE QUE LES SAOUDIENS PRENDRONT LA PLACE DES JUIFS D&apos;ANTAN ?</p>
