@@ -1,5 +1,4 @@
 export const Sidebar = [
-    {title: 'ACTUALITE', url: '/' },
     {title: 'NOTRE HISTOIRE', url: '/history'},
     {title: 'CULTURE', url: '/culture'},
     {title: "LA GALERIE", url: '/gallery'},
@@ -9,7 +8,6 @@ export const Sidebar = [
     {title: "TEMOIGNAGES", url: '/testimonies'},
     {title: "SORTIE D'EGYPTE", url: '/exit'},
     {title: "ADHESION", url: '/form'},
-    {title: "CONTACT", url: '/'}
 ];
 
 export const description = [

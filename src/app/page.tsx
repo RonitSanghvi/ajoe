@@ -1,9 +1,21 @@
+"use client"
 import Image from "next/image";
 import Link from 'next/link';
 import { Sidebar, description } from "./data";
 import Navbar from "./navbar";
+import { useState } from 'react';
 
 export default function Home() {
+
+  const [copied, setCopied] = useState(false);
+
+  const handleCopyEmail = (e: any) => {
+    e.preventDefault();
+    navigator.clipboard.writeText('admin@ajoe.com');
+    setCopied(true);
+    setTimeout(() => setCopied(false), 2000);
+  };
+
   return (
     <div className="flex flex-col w-screen">
         
@@ -21,6 +33,10 @@ export default function Home() {
               <Link href={data.url} className=" text-customOrange pl-4 hover:text-customYellow hover:font-semibold">{data.title}</Link>
             </div>
           ))}
+
+          <div className="border-b-2 mb-2 border-customOrange"></div>
+          <Link href="" onClick={handleCopyEmail} className=" text-customOrange pl-4 hover:text-customYellow hover:font-semibold">CONTACT</Link>
+          {copied && <p className="pl-4 text-customOrange transition duration-300 ease-in-out">Email copied!</p>}
 
         </div>
 
