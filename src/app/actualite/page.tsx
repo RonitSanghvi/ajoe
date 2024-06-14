@@ -20,9 +20,9 @@ export default function page() {
             <li>Pour lire le document en VO, cliquer <Link href="/PDFs/kaverman_chair_event_nov2013.pdf" className="underline text-customRed hover:text-customYellow">ICI</Link></li>
         </ul>
 
-        <div className="flex flex-wrap w-4/5 py-10 mx-auto">
+        <div className="flex flex-wrap sm:w-4/5 py-10 mx-auto">
             {actualiteImage.map((data, index)=>(
-                <div key={index} className="w-1/4 py-4 flex flex-col space-y-2 justify-between">
+                <div key={index} className="sm:w-1/4 mx-auto items-center sm:items-start py-4 flex flex-col space-y-2 justify-center">
                     <Image src= {data.image} height='200' width='200' alt={data.title} />
                     <p className="text-customYellow underline text-lg">{data.title}</p>
                 </div>
@@ -30,14 +30,14 @@ export default function page() {
         </div>
 
         {actualite.map((data, index)=>(
-            <p className="text-customYellow text-justify pr-10" key={index}>{data}</p>
+            <p className="text-customYellow text-justify pr-6" key={index}>{data}</p>
         ))}
 
         {actualite2.map((data, index)=>(
             <div key={index}>
-                <p className="text-customYellow text-justify underline text-lg pt-4 pb-2">{data.title}</p>
+                <p className="text-customYellow text-justify underline text-lg pt-4 pr-4 pb-2">{data.title}</p>
                 {data.data.map((i,index2)=>(
-                    <p key={index2} className="text-customYellow text-justify pr-10">{i}</p>
+                    <p key={index2} className="text-customYellow text-justify pr-6">{i}</p>
                 ))}
             </div>
         ))}

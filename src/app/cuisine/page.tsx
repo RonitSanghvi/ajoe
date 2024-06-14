@@ -4,7 +4,7 @@ export default function page() {
   return (
     <div className="w-screen">
         <Navbar image="/navbarImages/cuisine.jpg"/>
-        <div className="flex flex-col min-h-screen bg-customRedMedium px-4 space-y-4 pt-6 empty-dots">
+        <div className="flex flex-col min-h-screen bg-customRedMedium px-4 space-y-4 py-6 empty-dots">
             <p className="text-2xl pb-4 tracking-widest">Recette</p>
             <p className="font-semibold">MAYNA OU MINA : lasagnes de pain azyme<br/> POUR 6 à 8 PERSONNES</p>
             <ul className="pl-10">
@@ -15,7 +15,7 @@ export default function page() {
                 <li>un plat allant au four (carré ou rond ou long)</li>
             </ul>        
             {cuisine.map((data, index)=> (
-                <p className="text-customYellow flex flex-col space-y-4 w-3/4 text-justify" key={index}>{data}</p>
+                <p className="text-customYellow flex flex-col space-y-4 sm:w-3/4 text-justify" key={index}>{data}</p>
             ))}
             <p>le plus de la recette : un plat qui permet d&apos;accomoder les restes de viande.</p>
             <div className="text-customYellow">

@@ -19,10 +19,10 @@ export default function page() {
             <div className="text-customRed border-b border-white font-semibold text-lg tracking-widest">Première contribution de la famille FRENKEL.</div>
             <p className="text-customYellow"> Didier Frenkel nous a confié les feuilles de route des membres de sa famille, établies par le Ministère de l&apos;Intérieur, portant la mention : </p>
             <p className="">&quot;Feuille de Route Valable pour un seul Voyage et sans Retour&quot;.</p>
-            <div className="flex flex-row space-x-10 py-10 mx-auto">
+            <div className="flex flex-col sm:flex-row sm:space-x-10 py-10 mx-auto items-center">
                 {exit.map((data, index)=>(
-                    <div key={index} className="w-1/4 py-4 flex flex-col space-y-2 justify-between">
-                        <Image src= {data.image} height='100' width='100' alt={data.image} className="" />
+                    <div key={index} className="sm:w-1/4 py-4 flex flex-col space-y-2 justify-between">
+                        <Image src= {data.image} height='100' width='100' alt={data.image} className="w-32 self-center" />
                         <p className="text-customOrange underline text-md hover:text-customYellow">{data.name}</p>
                     </div>
                 ))}
