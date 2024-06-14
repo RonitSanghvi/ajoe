@@ -6,7 +6,7 @@ export default function page() {
     return (
     <div className="w-screen">
         <Navbar image="/navbarImages/album.jpg"/>
-        <div className="flex flex-col min-h-screen bg-customRedMedium px-4 space-y-4 pt-6">
+        <div className="flex flex-col min-h-screen text-justify bg-customRedMedium px-4 space-y-4 pt-6">
             <p className="text-2xl pb-4 tracking-widest">VOYAGE EN EGYPTE</p>
             <p className="text-customYellow">
                 Benjamin Katane, jeune AJOEnaute de 21 ans, nous a adressé ce message :<br/>
@@ -15,9 +15,9 @@ export default function page() {
                 des photos du caire et du quartier El Mouski dont nous sommes originaires.<br/>
                 Salemly ala kol el gamaa&apos;iya.&quot;
             </p>
-            <div className="flex flex-wrap w-4/5 py-10 mx-auto">
+            <div className="flex flex-wrap w-full sm:w-4/5 py-10 mx-auto">
                 {album.map((data, index)=>(
-                    <Image src= {data} height='200' width='200' key={index} alt={data} className="w-1/3 pr-4 py-4" />
+                    <Image src= {data} height='200' width='200' key={index} alt={data} className="w-full sm:w-1/3 pr-4 py-4" />
                 ))}
             </div>
         
