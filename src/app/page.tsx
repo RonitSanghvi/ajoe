@@ -7,7 +7,12 @@ import { useState } from 'react';
 
 export default function Home() {
 
-  const [copied, setCopied] = useState(false);
+  const [copied, setCopied] = useState(false);  
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const handleMenuToggle = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
 
   const handleCopyEmail = (e: any) => {
     e.preventDefault();
@@ -21,26 +26,29 @@ export default function Home() {
         
       <Navbar image = "/navbarImages/home.jpeg" />
 
-      <div className="flex flex-row bg-customStripes">
+      <div className="flex flex-col sm:flex-row bg-customStripes">
         <div className="flex flex-col tracking-widest space-y-3">
-          <Link href="/qui_sommes_nous" className="text-customRed font-bold pl-4 pr-8 pt-6 hover:scale-105">
-            qui sommes nous ?
-          </Link>
-          
-          {Sidebar.map((data, index)=> (
-            <div key={index} className="">
-              <div className="border-b-2 mb-2 border-customOrange"></div>
-              <Link href={data.url} className=" text-customOrange pl-4 hover:text-customYellow hover:font-semibold">{data.title}</Link>
-            </div>
-          ))}
+          <p className="block sm:hidden text-customRed border-t-2 border-b-2 border-customRed font-bold py-1 pl-4 mt-6 cursor-pointer text-xl active:text-customYellow" onClick={handleMenuToggle}>MENU</p>
+          {(isMenuOpen || window.innerWidth > 426) && (
+          <div className="">
+            <Link href="/qui_sommes_nous" className="text-customRed font-bold pl-4 pr-8 pt-6 hover:scale-105">
+              qui sommes nous ?
+            </Link>
+            
+            {Sidebar.map((data, index)=> (
+              <div key={index} className="">
+                <div className="border-b-2 mb-2 border-customOrange"></div>
+                <Link href={data.url} className=" text-customOrange pl-4 hover:text-customYellow hover:font-semibold">{data.title}</Link>
+              </div>
+            ))}
 
-          <div className="border-b-2 mb-2 border-customOrange"></div>
-          <Link href="" onClick={handleCopyEmail} className=" text-customOrange pl-4 hover:text-customYellow hover:font-semibold">CONTACT</Link>
-          {copied && <p className="pl-4 text-customOrange transition duration-300 ease-in-out">Email copied!</p>}
-
+            <div className="border-b-2 mb-2 border-customOrange"></div>
+            <Link href="" onClick={handleCopyEmail} className=" text-customOrange pl-4 hover:text-customYellow hover:font-semibold">CONTACT</Link>
+            {copied && <p className="pl-4 text-customOrange transition duration-300 ease-in-out">Email copied!</p>}
+          </div>)}
         </div>
 
-        <div className="flex-1 px-16 py-12 flex flex-col space-y-4 text-justify">
+        <div className="flex-1 px-4 sm:px-16 py-12 flex flex-col space-y-4 text-justify">
           <p className="text-left text-lg font-semibold pb-12">Actualité octobre 2021</p>
           <p className="text-left text-xl pb-4">Des nouvelles de l&apos;AJOE... enfin!</p>
           { description.map((data, index)=>(
@@ -63,7 +71,7 @@ export default function Home() {
           <p className="text-right pt-20">mise à jour 25/10/21</p>
         </div>
 
-        <div className="flex flex-col bg-yellow-100 text-black p-2 items-center space-y-4 text-center w-60 px-4">
+        <div className="flex flex-col bg-yellow-100 text-black items-center space-y-4 text-center w-full sm:w-60 p-4">
           <text className="text-lg font-bold py-2 text-customRed">A LIRE</text>
           <div>
             <Image
@@ -108,28 +116,28 @@ export default function Home() {
           </div>
 
           <div>
-          <span className="block">Conférence de Bat Yam</span>
-          <Link href="/PDFs/conference_batyam.pdf" className="text-customRed underline hover:text-customOrange">
-            lire la suite &gt;
-          </Link>
+            <span className="block">Conférence de Bat Yam</span>
+            <Link href="/PDFs/conference_batyam.pdf" className="text-customRed underline hover:text-customOrange">
+              lire la suite &gt;
+            </Link>
           </div>
 
           <div>
-          <span className="block"> Les fleurs de l&apos;orient et l&apos;occident </span>
-          <Link href="/PDFs/farhi_fleurs.pdf" className="text-customRed underline hover:text-customOrange">
-            lire la suite &gt;
-          </Link>
+            <span className="block"> Les fleurs de l&apos;orient et l&apos;occident </span>
+            <Link href="/PDFs/farhi_fleurs.pdf" className="text-customRed underline hover:text-customOrange">
+              lire la suite &gt;
+            </Link>
           </div>
 
           <div>
-          <span className="block"> Le livre mémoire de Roland Bertin </span>
-          <span className="block">&quot;Once apon a time&quot;</span>
-          <Link href="/PDFs/kanyamakan42.pdf" className="text-customRed underline hover:text-customOrange"> KAN YA MAKAN </Link>
+            <span className="block"> Le livre mémoire de Roland Bertin </span>
+            <span className="block">&quot;Once apon a time&quot;</span>
+            <Link href="/PDFs/kanyamakan42.pdf" className="text-customRed underline hover:text-customOrange"> KAN YA MAKAN </Link>
           </div>
 
           <div>
-          <span className="block">Conférence Alexandre De Aranjo</span>
-          <Link href="/PDFs/aranjo_de.pdf" className="text-customRed underline hover:text-customOrange"> le texte intégral </Link>
+            <span className="block">Conférence Alexandre De Aranjo</span>
+            <Link href="/PDFs/aranjo_de.pdf" className="text-customRed underline hover:text-customOrange"> le texte intégral </Link>
           </div>
 
         </div>
