@@ -4,11 +4,13 @@ import Link from 'next/link';
 import { Sidebar, description } from "./data";
 import Navbar from "./navbar";
 import { useState } from 'react';
+import useWindowSize from "./windowSize";
 
 export default function Home() {
 
   const [copied, setCopied] = useState(false);  
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const isLargeScreen = useWindowSize();
 
   const handleMenuToggle = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -29,7 +31,7 @@ export default function Home() {
       <div className="flex flex-col sm:flex-row bg-customStripes">
         <div className="flex flex-col tracking-widest space-y-3">
           <p className="block sm:hidden text-customRed border-t-2 border-b-2 border-customRed font-bold py-1 pl-4 mt-6 cursor-pointer text-xl active:text-customYellow" onClick={handleMenuToggle}>MENU</p>
-          {(isMenuOpen || window.innerWidth > 426) && (
+          {(isMenuOpen || isLargeScreen) && (
           <div className="">
             <Link href="/qui_sommes_nous" className="text-customRed font-bold pl-4 pr-8 pt-6 hover:scale-105">
               qui sommes nous ?
