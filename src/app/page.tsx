@@ -32,19 +32,19 @@ export default function Home() {
         <div className="flex flex-col tracking-widest space-y-3">
           <p className="block sm:hidden text-customRed border-t-2 border-b-2 border-customRed font-bold py-1 pl-4 mt-6 cursor-pointer text-xl active:text-customYellow" onClick={handleMenuToggle}>MENU</p>
           {(isMenuOpen || isLargeScreen) && (
-          <div className="">
+          <div className="space-y-3">
             <Link href="/qui_sommes_nous" className="text-customRed font-bold pl-4 pr-8 pt-6 hover:scale-105">
               qui sommes nous ?
             </Link>
             
             {Sidebar.map((data, index)=> (
               <div key={index} className="">
-                <div className="border-b-2 mb-2 border-customOrange"></div>
+                <div className="border-b-2 mb-3 border-customOrange"></div>
                 <Link href={data.url} className=" text-customOrange pl-4 hover:text-customYellow hover:font-semibold">{data.title}</Link>
               </div>
             ))}
 
-            <div className="border-b-2 mb-2 border-customOrange"></div>
+            <div className=" border-b-2 border-customOrange"></div>
             <Link href="" onClick={handleCopyEmail} className=" text-customOrange pl-4 hover:text-customYellow hover:font-semibold">CONTACT</Link>
             {copied && <p className="pl-4 text-customOrange transition duration-300 ease-in-out">Email copied!</p>}
           </div>)}
