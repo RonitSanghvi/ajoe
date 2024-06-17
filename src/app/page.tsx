@@ -1,9 +1,9 @@
 "use client"
 import Image from "next/image";
-import Link from 'next/link';
+import Link from "next/link";
 import { Sidebar } from "./data";
 import Navbar from "./navbar";
-import { useState } from 'react';
+import { useState } from "react";
 import useWindowSize from "./windowSize";
 
 export default function Home() {
@@ -18,7 +18,7 @@ export default function Home() {
 
   const handleCopyEmail = (e: any) => {
     e.preventDefault();
-    navigator.clipboard.writeText('admin@ajoe.com');
+    navigator.clipboard.writeText("admin@ajoe.com");
     setCopied(true);
     setTimeout(() => setCopied(false), 2000);
   };
@@ -53,22 +53,22 @@ export default function Home() {
         <div className="flex-1 px-4 sm:px-16 py-12 flex flex-col space-y-4 text-justify">
           <Image alt="alex Image" src="/alex.jpeg" width="180" height="270" className="border-0" />
           <p className="text-left text-xl pb-4">Des nouvelles de l&apos;AJOE... enfin!</p>
-          <p className="text-left text-xl pb-4">Chers amis de l'AJOE,</p>
+          <p className="text-left text-xl pb-4">Chers amis de l&qout;AJOE,</p>
           <p className="text-customYellow tracking-wider">
-            Ces deux dernières années ont été comme pour tout le monde une période très difficile pour notre association et a vu disparaître beaucoup de nos très chers amis. C'est ainsi que David HARARI s'en est allé en plein confinement le 7 avril 2020. L'AJOE perd encore une fois un membre très actif, bien plus qu'un trésorier, un très grand ami et nous lui rendons hommage. Il nous manque terriblement.
+            Ces deux dernières années ont été comme pour tout le monde une période très difficile pour notre association et a vu disparaître beaucoup de nos très chers amis. C&qout;est ainsi que David HARARI s&qout;en est allé en plein confinement le 7 avril 2020. L&qout;AJOE perd encore une fois un membre très actif, bien plus qu&qout;un trésorier, un très grand ami et nous lui rendons hommage. Il nous manque terriblement.
           </p>
           <p className="text-customYellow tracking-wider">
-            Cependant, pour toute une nouvelle génération qui arrive, notre histoire se doit d'être transmise. C'est pourquoi nous avons décidé de programmer et de produire, pour une soirée exceptionnelle le 15 décembre prochain, le spectacle d'Isabelle de Botton 'La Parisienne d'Alexandrie' qui retrace avec tant de justesse, tendresse et humour l'épopée des Juifs d'Égypte.  
+            Cependant, pour toute une nouvelle génération qui arrive, notre histoire se doit d&qout;être transmise. C&qout;est pourquoi nous avons décidé de programmer et de produire, pour une soirée exceptionnelle le 15 décembre prochain, le spectacle d&qout;Isabelle de Botton &qout;La Parisienne d&qout;Alexandrie&qout; qui retrace avec tant de justesse, tendresse et humour l&qout;épopée des Juifs d&qout;Égypte.  
           </p>
           <p className="text-customYellow tracking-wider">
-            En plus de cela, nous avons trouvé de généreux contributeurs et entrepreneurs - <Link className="underline hover:text-customRed text-customOrange" href="https://www.jdc.org/">JDC</Link> et <Link className="underline hover:text-customRed text-customOrange" href="https://aiforeveryone.org/">AiForEveryone</Link> - pour soutenir notre cause via des dons économiques et techniques, afin d'assurer que notre projet non seulement perdure, mais se développe encore davantage au sein de la communauté juive d'Égypte. Leur générosité et leur engagement sont une véritable source d'inspiration pour nous tous.  
+            En plus de cela, nous avons trouvé de généreux contributeurs et entrepreneurs - <Link className="underline hover:text-customRed text-customOrange" href="https://www.jdc.org/">JDC</Link> et <Link className="underline hover:text-customRed text-customOrange" href="https://aiforeveryone.org/">AiForEveryone</Link> - pour soutenir notre cause via des dons économiques et techniques, afin d&qout;assurer que notre projet non seulement perdure, mais se développe encore davantage au sein de la communauté juive d&qout;Égypte. Leur générosité et leur engagement sont une véritable source d&qout;inspiration pour nous tous.  
           </p>
           <p className="text-customYellow tracking-wider">
-          Nous espérons vous voir nombreux lors de cette soirée mémorable, pour célébrer notre histoire commune et rendre hommage à ceux qui nous ont quittés. Ensemble, nous continuerons à faire vivre l'esprit et les valeurs de l'AJOE.  
+          Nous espérons vous voir nombreux lors de cette soirée mémorable, pour célébrer notre histoire commune et rendre hommage à ceux qui nous ont quittés. Ensemble, nous continuerons à faire vivre l&qout;esprit et les valeurs de l&qout;AJOE.  
           </p>
 
           <p className="text-left text-xl">Avec toute notre amitié,</p>
-          <p className="text-left text-xl">L'équipe de l'AJOE</p>
+          <p className="text-left text-xl">L&qout;équipe de l&qout;AJOE</p>
           
         </div>
 
