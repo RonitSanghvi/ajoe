@@ -53,18 +53,18 @@ export default function Home() {
         <div className="flex-1 px-4 sm:px-16 py-12 flex flex-col space-y-4 text-justify">
           <Image alt="alex Image" src="/alex.jpeg" width="180" height="270" className="border-0" />
           <p className="text-left text-xl pb-4">Des nouvelles de l&apos;AJOE... enfin!</p>
-          <p className="text-left text-xl pb-4">Chers amis de l&quot;AJOE,</p>
+          <p className="text-left text-xl pb-4">Chers amis de l&apos;AJOE,</p>
           <p className="text-customYellow tracking-wider">
-            Ces deux dernières années ont été comme pour tout le monde une période très difficile pour notre association et a vu disparaître beaucoup de nos très chers amis. C&quot;est ainsi que David HARARI s&quot;en est allé en plein confinement le 7 avril 2020. L&quot;AJOE perd encore une fois un membre très actif, bien plus qu&quot;un trésorier, un très grand ami et nous lui rendons hommage. Il nous manque terriblement.
+            Ces deux dernières années ont été comme pour tout le monde une période très difficile pour notre association et a vu disparaître beaucoup de nos très chers amis. C&apos;est ainsi que David HARARI s&apos;en est allé en plein confinement le 7 avril 2020. L&apos;AJOE perd encore une fois un membre très actif, bien plus qu&apos;un trésorier, un très grand ami et nous lui rendons hommage. Il nous manque terriblement.
           </p>
           <p className="text-customYellow tracking-wider">
-            Cependant, pour toute une nouvelle génération qui arrive, notre histoire se doit d&quot;être transmise. C&quot;est pourquoi nous avons décidé de programmer et de produire, pour une soirée exceptionnelle le 15 décembre prochain, le spectacle d&quot;Isabelle de Botton &quot;La Parisienne d&quot;Alexandrie&quot; qui retrace avec tant de justesse, tendresse et humour l&quot;épopée des Juifs d&quot;Égypte.  
+            Cependant, pour toute une nouvelle génération qui arrive, notre histoire se doit d&apos;être transmise. C&apos;est pourquoi nous avons décidé de programmer et de produire, pour une soirée exceptionnelle le 15 décembre prochain, le spectacle d&apos;Isabelle de Botton &apos;La Parisienne d&apos;Alexandrie&apos; qui retrace avec tant de justesse, tendresse et humour l&apos;épopée des Juifs d&apos;Égypte.  
           </p>
           <p className="text-customYellow tracking-wider">
-            En plus de cela, nous avons trouvé de généreux contributeurs et entrepreneurs - <Link className="underline hover:text-customRed text-customOrange" href="https://www.jdc.org/">JDC</Link> et <Link className="underline hover:text-customRed text-customOrange" href="https://aiforeveryone.org/">AiForEveryone</Link> - pour soutenir notre cause via des dons économiques et techniques, afin d&quot;assurer que notre projet non seulement perdure, mais se développe encore davantage au sein de la communauté juive d&quot;Égypte. Leur générosité et leur engagement sont une véritable source d&quot;inspiration pour nous tous.  
+            En plus de cela, nous avons trouvé de généreux contributeurs et entrepreneurs - <Link className="underline hover:text-customRed text-customOrange" href="https://www.jdc.org/">JDC</Link> et <Link className="underline hover:text-customRed text-customOrange" href="https://aiforeveryone.org/">AiForEveryone</Link> - pour soutenir notre cause via des dons économiques et techniques, afin d&apos;assurer que notre projet non seulement perdure, mais se développe encore davantage au sein de la communauté juive d&apos;Égypte. Leur générosité et leur engagement sont une véritable source d&apos;inspiration pour nous tous.  
           </p>
           <p className="text-customYellow tracking-wider">
-          Nous espérons vous voir nombreux lors de cette soirée mémorable, pour célébrer notre histoire commune et rendre hommage à ceux qui nous ont quittés. Ensemble, nous continuerons à faire vivre l&quot;esprit et les valeurs de l&quot;AJOE.  
+          Nous espérons vous voir nombreux lors de cette soirée mémorable, pour célébrer notre histoire commune et rendre hommage à ceux qui nous ont quittés. Ensemble, nous continuerons à faire vivre l&apos;esprit et les valeurs de l&apos;AJOE.  
           </p>
 
           <p className="text-left text-xl">Avec toute notre amitié,</p>
