@@ -68,7 +68,7 @@ export default function Home() {
           </p>
 
           <p className="text-left text-xl">Avec toute notre amitié,</p>
-          <p className="text-left text-xl">L&quot;équipe de l&quot;AJOE</p>
+          <p className="text-left text-xl">L&apos;équipe de l&apos;AJOE</p>
           
         </div>
 
