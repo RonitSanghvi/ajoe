@@ -2,6 +2,11 @@ import Link from "next/link"
 import Navbar from "../navbar"
 import Image from "next/image"
 import { actualite, actualite2, actualiteImage } from "../data"
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: "Actualite"
+}
 export default function page() {
   return (
     <div className="w-screen">

@@ -1,7 +1,11 @@
 import Navbar from "../navbar"
 import { rahmani } from "../data"
 import Image from "next/image"
+import { Metadata } from "next";
 
+export const metadata: Metadata = {
+    title: "Moise Rahmani"
+}
 export default function page() {
   return (
     <div className="w-screen text-customYellow">

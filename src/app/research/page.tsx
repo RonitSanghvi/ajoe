@@ -1,4 +1,9 @@
 import Navbar from "../navbar"
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: "Recherches"
+}
 export default function page() {
   return (
     <div className="w-screen">

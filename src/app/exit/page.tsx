@@ -1,7 +1,11 @@
 import Navbar from "../navbar"
 import { exit } from "../data"
 import Image from "next/image"
+import { Metadata } from "next";
 
+export const metadata: Metadata = {
+    title: "Sortie D'Egtpte"
+}
 export default function page() {
   return (
     <div className="w-screen">

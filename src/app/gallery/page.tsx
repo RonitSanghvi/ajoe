@@ -1,7 +1,11 @@
 import Image from "next/image"
 import Navbar from "../navbar"
 import { gallery } from "../data"
+import { Metadata } from "next";
 
+export const metadata: Metadata = {
+    title: "La Galerie"
+}
 export default function page() {
     return (
         <div>

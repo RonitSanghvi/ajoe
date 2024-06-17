@@ -1,4 +1,9 @@
 import Navbar from "../navbar"
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: "Temoignages"
+}
 export default function page() {
   return (
     <>

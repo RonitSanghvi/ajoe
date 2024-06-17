@@ -1,5 +1,10 @@
 import Link from "next/link"
 import Navbar from "../navbar"
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: "Culture"
+}
 export default function page() {
   return (
     <div className="w-screen">

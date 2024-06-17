@@ -1,5 +1,10 @@
 import Link from "next/link";
 import Navbar from "../navbar";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: "qui_sommes_nous"
+}
 
 export default function page() {
     return (

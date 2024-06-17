@@ -1,5 +1,10 @@
 import Navbar from "../navbar"
 import { cuisine } from "../data"
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: "Cuisine"
+}
 export default function page() {
   return (
     <div className="w-screen">

@@ -1,7 +1,11 @@
 import Navbar from "../navbar"
 import Image from "next/image"
 import { history, history2, history3 } from "../data"
+import { Metadata } from "next";
 
+export const metadata: Metadata = {
+    title: "Notre Histoire"
+}
 export default function page() {
     return (
         <div>

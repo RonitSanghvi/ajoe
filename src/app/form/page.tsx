@@ -1,6 +1,10 @@
 import Navbar from "../navbar"
 import styles from './MembershipForm.module.css'
+import { Metadata } from "next";
 
+export const metadata: Metadata = {
+    title: "Adhesion"
+}
 export default function page() {
     return (
         <div className="w-screen">
